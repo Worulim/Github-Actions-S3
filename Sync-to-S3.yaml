@@ -20,7 +20,7 @@ jobs:
     - name: Deploy to S3
       run: |
         echo "Syncing specific files to S3..."
-        aws s3 cp . s3://버킷명/폴더명/ --recursive \
+        aws s3 cp . s3://kakako-github-actions-s3/ --recursive \
         --exclude "*" \
         --include "*.html" \
         --include "*.css" \
